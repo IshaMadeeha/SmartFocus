@@ -1,0 +1,228 @@
+PROJECT: Emotion-Aware Smart Study Assistant
+
+--------------------------------------------------
+
+PROMPT 1: HTML UI Creation
+
+I am building a Smart Study Assistant web app.
+
+Create only the HTML structure.
+
+Requirements:
+- Add fixed header with title "Smart Study Assistant"
+- Add container card layout
+- Add input field for task (id: taskInput)
+- Add timer display (id: timer)
+- Add Start button (id: startButton)
+- Add Stop button (id: stopButton)
+- Add study mode dropdown (id: modeSelect)
+- Add suggestion text (id: suggestion)
+- Add emotion text (id: emotionText)
+- Add video element for webcam (id: video)
+- Keep layout clean and scrollable
+
+--------------------------------------------------
+
+PROMPT 2: CSS Styling
+
+Create a modern pastel UI.
+
+Requirements:
+- Use soft gradient background (pink, lavender, blue)
+- Add fixed header with blur effect
+- Style container as card with shadow and rounded corners
+- Make timer large and bold
+- Style buttons with green (start) and red (stop)
+- Add hover animation (scale + shadow)
+- Style dropdown and input neatly
+- Style suggestion text clearly
+- Style webcam video with rounded edges
+- Allow vertical scrolling (no height: 100vh)
+
+--------------------------------------------------
+
+PROMPT 3: Timer Initialization Fix
+
+Fix timer initialization.
+
+Requirements:
+- Set default timer to 25 minutes (1500 seconds)
+- Display timer as 25:00 on page load
+- Prevent timer from starting at 00:00
+- Call update display function on load
+
+--------------------------------------------------
+
+PROMPT 4: Start and Stop Timer Logic
+
+Fix Start and Stop button functionality.
+
+Requirements:
+- Start button begins countdown
+- Stop button pauses timer
+- Prevent multiple timers from running
+- Use setInterval and clearInterval properly
+
+--------------------------------------------------
+
+PROMPT 5: Connect Buttons
+
+Connect buttons to timer functions.
+
+Requirements:
+- Add event listeners to startButton and stopButton
+- Call startTimer() on Start click
+- Call stopTimer() on Stop click
+
+--------------------------------------------------
+
+PROMPT 6: Timer Display Format
+
+Fix timer display formatting.
+
+Requirements:
+- Show time in MM:SS format
+- Always show two digits
+- Update every second
+- Use element with id "timer"
+
+--------------------------------------------------
+
+PROMPT 7: Study Mode Feature
+
+Add study modes.
+
+Requirements:
+- Homework → 25 minutes
+- Exam → 50 minutes
+- Quick Study → 15 minutes
+- Change timer when mode changes
+- Do not auto-start timer
+
+--------------------------------------------------
+
+PROMPT 8: Webcam Integration
+
+Add webcam functionality.
+
+Requirements:
+- Access webcam using getUserMedia
+- Display video in element with id "video"
+- Start webcam on page load
+- Handle permission errors
+
+--------------------------------------------------
+
+PROMPT 9: Emotion Detection (Simulation)
+
+Add emotion simulation.
+
+Requirements:
+- Every 10 seconds randomly select:
+  Happy, Neutral, Stressed
+- Display emotion in element with id "emotionText"
+- Log emotion in console
+
+--------------------------------------------------
+
+PROMPT 10: Suggestions System
+
+Add smart suggestions.
+
+Requirements:
+- Happy → "Great focus! Keep going!"
+- Neutral → "Stay consistent!"
+- Stressed → "Take a short break"
+- Display in element with id "suggestion"
+
+--------------------------------------------------
+
+PROMPT 11: Productivity Score (ML Concept)
+
+Add productivity scoring.
+
+Requirements:
+- Increase score when Happy
+- Decrease score when Stressed
+- Log score in console
+
+--------------------------------------------------
+
+PROMPT 12: ML Tracking
+
+Add tracking system.
+
+Requirements:
+- Track study sessions
+- Track break suggestions
+- Log data in console
+
+--------------------------------------------------
+
+PROMPT 13: Reinforcement Learning Concept
+
+Add decision history tracking.
+
+Requirements:
+- Store emotion and action pairs
+- Save in array
+- Log decision history
+
+--------------------------------------------------
+
+PROMPT 14: Emotion History (LSTM Concept)
+
+Track emotion sequence.
+
+Requirements:
+- Store detected emotions in array
+- Log emotion history
+- Simulate sequence learning
+
+--------------------------------------------------
+
+PROMPT 15: Notifications
+
+Add browser notifications.
+
+Requirements:
+- Ask permission
+- Notify when session completes
+- Notify when too many breaks occur
+
+--------------------------------------------------
+
+PROMPT 16: Emotion-Based Timer Adjustment
+
+Modify timer using emotion.
+
+Requirements:
+- Happy → increase time slightly
+- Stressed → reduce time or suggest break
+- Log changes
+
+--------------------------------------------------
+
+PROMPT 17: Button State Fix
+
+Fix button enable/disable behavior.
+
+Requirements:
+- Start enabled initially
+- Stop disabled initially
+- Disable Start when running
+- Enable Stop when running
+- Reverse when stopped
+
+--------------------------------------------------
+
+PROMPT 18: User Feedback Messages
+
+Improve user interaction.
+
+Requirements:
+- Show message when timer starts
+- Show message when paused
+- Show alert when completed
+
+--------------------------------------------------

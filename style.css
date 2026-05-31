@@ -1,0 +1,82 @@
+/*
+Create a clean modern pastel UI.
+
+Requirements:
+- Use soft gradient background (pink + blue)
+- Add fixed header with blur effect
+- Center container with card style:
+    white background
+    rounded corners
+    shadow
+- Make timer large and bold
+- Style buttons with green and red colors
+- Add hover animation (scale)
+- Style dropdown nicely
+- Style suggestion text
+- Make video responsive and visible
+- Ensure page is scrollable (NO height: 100vh)
+*/
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+    color: #333;
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    text-align: center;
+    z-index: 1000;
+}
+.container {
+    max-width: 600px;
+    margin: 100px auto 0;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+}
+.timer {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+button.start {
+    background-color: #28a745;
+}
+button.stop {
+    background-color: #dc3545;
+}
+button:hover {    transform: scale(1.05);
+}
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.suggestion {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}   
+        
